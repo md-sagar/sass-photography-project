@@ -1,0 +1,38 @@
+//variables
+@import "../base/variables";
+
+#callto{
+    background-image:$primary-color;
+    h1{
+        color: #fff;
+    }
+    .callto-btn{
+        border: 1px solid #777;
+        color: #222;
+        font-weight: 500;
+        background: #fff;
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        font-size: 14px;
+        border-radius: 20px;
+        padding: 12px 28px;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            background-image: $primary-color; 
+            color: #fff;
+        }
+    }
+}
+@media (max-width:575px) {
+    #callto{
+        text-align: center;
+        h1{
+            margin-bottom: 20px;
+        }
+        .callto-btn{
+            padding: 8px 18px;
+
+        }
+    }
+}

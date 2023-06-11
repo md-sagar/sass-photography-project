@@ -1,0 +1,41 @@
+//variables import
+@import "../base/variables";
+#about{
+    .about-right{
+        h1{
+            margin-bottom: 20px;
+        }
+        p{
+            padding-right: 25%;
+            margin-bottom: 30px;
+        }
+    }
+}
+//mediam device responsive
+@media (max-width:767px) and (min-width:576px) {
+    #about{
+        .about-right{
+            h1{
+                margin: 20px;
+            }
+            p{
+                padding-right:0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+//small divaice responsive
+@media (max-width:575px) {
+    #about{
+        .about-right{
+            h1{
+                margin: 20px;
+            }
+            p{
+                padding-right:0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

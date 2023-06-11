@@ -1,0 +1,44 @@
+//variables
+@import "../base/variables";
+footer {
+    background-color: #222222;
+    color: #fff;
+    padding: 25px 0;
+    .footer-text{
+        span{
+            color: #7a77ff;
+            cursor: pointer;
+        }
+        i{
+            color: #7a77ff;
+            padding-right: 3px;
+        }
+    }
+
+    .footer-icone{
+        a{
+            i{
+                padding: 10px 15px;
+                background-color: #111111;
+                transition: all 0.3s ease 0s;
+                color: #eeeeee;
+                display: inline-block;
+                &:hover{
+                    background-image: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:575px) {
+    footer {
+        .footer-text{
+            margin-bottom: 20px;
+        }
+    
+        .footer-icone{
+            text-align: center;
+        }
+    }
+}

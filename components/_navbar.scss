@@ -1,0 +1,122 @@
+nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:transparent;
+    color: #fff;
+    z-index: 99;
+    .nav-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        ul{
+            display: flex;
+            list-style: none;
+            transform: translateX(100%)scaleX(0);
+            transition: .7S;
+            li{
+                a{
+                    color: #fff;
+                    margin: 0px 25px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 500;
+                    transition: .4s;
+                    &:hover{
+                        color: #7a77ff !important;
+                    }
+                }
+            }
+        }
+    }
+    .nav-btn{
+        .btn1{
+            position: absolute;
+            cursor: pointer;
+            span{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width:20px;
+                height: 3px;
+                background-color: #fff;
+
+                &:first-child{
+                    top: 0;
+                }
+                &:nth-child(2){
+                    top: 5px;
+                }
+                &:last-child{
+                    top: 10px;
+                }
+            }
+        }
+        .btn2{
+            position: absolute;
+            cursor: pointer;
+            display: none;
+
+            span{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width:20px;
+                height: 3px;
+                background-color: #fff;
+                &:first-child{
+                    top: 0;
+                    transform: rotate(-50deg);
+                }
+                &:last-child{
+                    top: 0;
+                    transform: rotate(50deg);
+                }
+            }
+        }
+    }
+
+}
+@media (max-width:991px) and (min-width:758px) {
+    nav{
+        .navbar{
+            ul{
+                li{
+                    a{
+                        margin: 0 20px;
+                    }
+                }
+            }  
+        } 
+    }
+}
+@media (max-width:767px) {
+    nav{
+        .navbar{
+            width: 100%;
+            position: relative;
+            .nav-btn{
+                position: absolute;
+                top: 50%;
+                right: 20px;
+            }
+            ul{
+                position: absolute;
+                top: 77px;
+                right: 0px;
+                background-color: #fff;
+                flex-direction: column;
+                padding: 20px 10px;
+                li{
+                    text-align: end;
+                    padding: 5px 0;
+                    a{
+                        color: #7a77ff !important;
+                    }
+                }
+            }  
+        } 
+    }
+}
